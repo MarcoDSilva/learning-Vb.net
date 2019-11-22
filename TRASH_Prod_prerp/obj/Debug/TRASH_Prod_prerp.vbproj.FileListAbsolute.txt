@@ -1,0 +1,11 @@
+C:\Users\EFA\source\repos\TRASH_Prod_prerp\bin\Debug\TRASH_Prod_prerp.exe.config
+C:\Users\EFA\source\repos\TRASH_Prod_prerp\bin\Debug\TRASH_Prod_prerp.exe
+C:\Users\EFA\source\repos\TRASH_Prod_prerp\bin\Debug\TRASH_Prod_prerp.pdb
+C:\Users\EFA\source\repos\TRASH_Prod_prerp\bin\Debug\TRASH_Prod_prerp.xml
+C:\Users\EFA\source\repos\TRASH_Prod_prerp\obj\Debug\TRASH_Prod_prerp.vbprojAssemblyReference.cache
+C:\Users\EFA\source\repos\TRASH_Prod_prerp\obj\Debug\TRASH_Prod_prerp.Form1.resources
+C:\Users\EFA\source\repos\TRASH_Prod_prerp\obj\Debug\TRASH_Prod_prerp.Resources.resources
+C:\Users\EFA\source\repos\TRASH_Prod_prerp\obj\Debug\TRASH_Prod_prerp.vbproj.GenerateResource.cache
+C:\Users\EFA\source\repos\TRASH_Prod_prerp\obj\Debug\TRASH_Prod_prerp.exe
+C:\Users\EFA\source\repos\TRASH_Prod_prerp\obj\Debug\TRASH_Prod_prerp.xml
+C:\Users\EFA\source\repos\TRASH_Prod_prerp\obj\Debug\TRASH_Prod_prerp.pdb
