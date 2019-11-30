@@ -9,3 +9,14 @@ C:\Users\EFA\source\repos\TRASH_Prod_prerp\obj\Debug\TRASH_Prod_prerp.vbproj.Gen
 C:\Users\EFA\source\repos\TRASH_Prod_prerp\obj\Debug\TRASH_Prod_prerp.exe
 C:\Users\EFA\source\repos\TRASH_Prod_prerp\obj\Debug\TRASH_Prod_prerp.xml
 C:\Users\EFA\source\repos\TRASH_Prod_prerp\obj\Debug\TRASH_Prod_prerp.pdb
+D:\Curso\UF23\learning-Vb.net\TRASH_Prod_prerp\bin\Debug\TRASH_Prod_prerp.exe.config
+D:\Curso\UF23\learning-Vb.net\TRASH_Prod_prerp\bin\Debug\TRASH_Prod_prerp.exe
+D:\Curso\UF23\learning-Vb.net\TRASH_Prod_prerp\bin\Debug\TRASH_Prod_prerp.pdb
+D:\Curso\UF23\learning-Vb.net\TRASH_Prod_prerp\bin\Debug\TRASH_Prod_prerp.xml
+D:\Curso\UF23\learning-Vb.net\TRASH_Prod_prerp\obj\Debug\TRASH_Prod_prerp.vbprojAssemblyReference.cache
+D:\Curso\UF23\learning-Vb.net\TRASH_Prod_prerp\obj\Debug\TRASH_Prod_prerp.Form1.resources
+D:\Curso\UF23\learning-Vb.net\TRASH_Prod_prerp\obj\Debug\TRASH_Prod_prerp.Resources.resources
+D:\Curso\UF23\learning-Vb.net\TRASH_Prod_prerp\obj\Debug\TRASH_Prod_prerp.vbproj.GenerateResource.cache
+D:\Curso\UF23\learning-Vb.net\TRASH_Prod_prerp\obj\Debug\TRASH_Prod_prerp.exe
+D:\Curso\UF23\learning-Vb.net\TRASH_Prod_prerp\obj\Debug\TRASH_Prod_prerp.xml
+D:\Curso\UF23\learning-Vb.net\TRASH_Prod_prerp\obj\Debug\TRASH_Prod_prerp.pdb

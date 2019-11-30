@@ -22,5 +22,40 @@ TRASH_Prod_prerp
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="T:TRASH_Prod_prerp.Form1">
+ <summary>
+ Made by Marco Silva at 30/11/2019 
+ Preparation for the VBnet production that uses CRUD operations
+ </summary>
+</member>
+<member name="M:TRASH_Prod_prerp.Form1.Form1_Load(System.Object,System.EventArgs)">
+ <summary>
+ Form load for the comboboxes dropdown
+ We query the "Categorias" table, feed it as datasource to the combo
+ then we define "nome" as displaymember and "id" as valuemember
+ We also block the grid info to readonly, since we don't want the user to touch the data from it
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:TRASH_Prod_prerp.Form1.btn_addProduct_Click(System.Object,System.EventArgs)">
+ <summary>
+ Adds the respective product to the db
+ 
+ After the combo is filled (at the form load) and this button is selected
+ We take the strings from the textboxes for both product name and quantity
+ and the value of the member selected from the combobox (ID of the respective Category)
+ With this, we make a query and add that item to the list
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:TRASH_Prod_prerp.Form1.btn_delProduct_Click(System.Object,System.EventArgs)">
+ <summary>
+ 
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
 </members>
 </doc>

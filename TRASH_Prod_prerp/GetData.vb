@@ -37,6 +37,19 @@ Public Class GetData
 
     End Function
 
+    'Method to add Data to the db - should be refactored to sanitize the data
+    Public Sub AddData(name As String, quantity As String, selectedCategory As String)
+        Dim query As String = $"Insert into Produtos(nome,quantidade,categoria) values ('{name}', {quantity}, {selectedCategory})"
+        DBConnection(query)
+
+    End Sub
+
+    'Method to delete data from the DB
+    Public Sub DeleteData(id As String)
+
+        Dim query As String = $"Delete from Produtos where Produtos.id = {id};"
+        DBConnection(query)
+    End Sub
 
 
 End Class
