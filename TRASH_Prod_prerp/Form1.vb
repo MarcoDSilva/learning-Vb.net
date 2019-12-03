@@ -9,13 +9,14 @@ Public Class Form1
 
     'Lists all the database information onto a grid
     Private Sub btn_list_Click(sender As Object, e As EventArgs) Handles btn_list.Click
-        refreshGrid()
+        RefreshGrid()
     End Sub
 
     'Clears the grid info (not the database items)
     Private Sub btn_clear_Click(sender As Object, e As EventArgs) Handles btn_clear.Click
         grid_info.Columns.Clear()
     End Sub
+
 
     ''' <summary>
     ''' Form load for the comboboxes dropdown
@@ -26,19 +27,8 @@ Public Class Form1
     ''' <param name="sender"></param>
     ''' <param name="e"></param>
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'combobox for category products (add new elements query)
-        Dim query As String = "select * from Categorias"
-        cmb_addCategoria.DataSource = connection.DBConnection(query).Tables(0)
-        cmb_addCategoria.DisplayMember = "nome"
-        cmb_addCategoria.ValueMember = "id"
-
-        Dim queryDeletion = "select * from Produtos"
-
-        'combobox for deleting products
-        cmb_delProduct.DataSource = connection.DBConnection(queryDeletion).Tables(0)
-        cmb_delProduct.DisplayMember = "nome"
-        cmb_delProduct.ValueMember = "id"
-
+        RefreshGrid()
+        RefreshCombo()
         grid_info.ReadOnly = True
 
     End Sub
@@ -60,8 +50,9 @@ Public Class Form1
         Dim selectedCategory As String = cmb_addCategoria.SelectedValue
 
         connection.AddData(name, quantity, selectedCategory)
-        refreshGrid()
-
+        RefreshGrid()
+        RefreshCombo()
+        RefreshLabel()
     End Sub
 
     ''' <summary>
@@ -72,14 +63,79 @@ Public Class Form1
     Private Sub btn_delProduct_Click(sender As Object, e As EventArgs) Handles btn_delProduct.Click
 
         Dim id As String = cmb_delProduct.SelectedValue
-
         connection.DeleteData(id)
-        refreshGrid()
+        RefreshGrid()
+        RefreshCombo()
+        RefreshLabel()
+    End Sub
+
+    ''' <summary>
+    ''' attention needed for the fact that the combobox since it's being loaded before the db
+    ''' the value that comes from it is not valid. To fix this
+    ''' we can use a try catch or a tryparse to parse the value
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
+    Private Sub cmb_filterCategory_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmb_filterCategory.SelectedIndexChanged
+        Dim id As String
+        Try
+            id = cmb_filterCategory.SelectedValue
+        Catch ex As Exception
+            id = 0
+        End Try
+
+        Dim query As String = $"select * from Produtos where Produtos.categoria = {id};"
+        grid_info.DataSource = connection.DBConnection(query).Tables(0)
+        RefreshLabel()
+
     End Sub
 
     'METHOD TO REFRESH THE GRID
-    Private Sub refreshGrid()
-        Dim query As String = "select * from Produtos"
+    Private Sub RefreshGrid()
+        Dim query As String = "select p.id, p.nome, p.quantidade, c.nome as categoria 
+                                from Produtos p, Categorias c
+                                where c.id = p.categoria"
+
         grid_info.DataSource = connection.DBConnection(query).Tables(0)
+        RefreshLabel()
+    End Sub
+
+
+    Private Sub RefreshCombo()
+        'combobox for category products (add new elements query)
+        Dim query As String = "select * from Categorias"
+        cmb_addCategoria.DataSource = connection.DBConnection(query).Tables(0)
+        cmb_addCategoria.DisplayMember = "nome"
+        cmb_addCategoria.ValueMember = "id"
+
+        'using same query for the combo to filter by categoires
+        cmb_filterCategory.DataSource = connection.DBConnection(query).Tables(0)
+        cmb_filterCategory.DisplayMember = "nome"
+        cmb_filterCategory.ValueMember = "id"
+
+
+        'combobox for deleting products
+        Dim queryDeletion = "select * from Produtos"
+        cmb_delProduct.DataSource = connection.DBConnection(queryDeletion).Tables(0)
+        cmb_delProduct.DisplayMember = "nome"
+        cmb_delProduct.ValueMember = "id"
+
+    End Sub
+
+    Private Sub RefreshLabel()
+        Dim total As Integer = grid_info.Rows.Count()
+        lbl_registos.Text = "Total de registos:  " + total.ToString
+    End Sub
+
+    ''' <summary>
+    ''' Search for the product with the correspondent name or close to it
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
+    Private Sub txt_searchProduto_TextChanged(sender As Object, e As EventArgs) Handles txt_searchProduto.TextChanged
+        Dim product = txt_searchProduto.Text
+        Dim query = $"select * from Produtos p where p.nome like '%{product}%'"
+        grid_info.DataSource = connection.DBConnection(query).Tables(0)
+
     End Sub
 End Class
