@@ -1,0 +1,138 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+VBMarcoSilva
+</name>
+</assembly>
+<members>
+<member name="T:VBMarcoSilva.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:VBMarcoSilva.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:VBMarcoSilva.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:VBMarcoSilva.Form1.EliminarRegistosDaBDToolStripMenuItem_Click(System.Object,System.EventArgs)">
+ <summary>
+ erases the data from the db
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:VBMarcoSilva.Form1.LançarNaBDOsRegistosToolStripMenuItem_Click(System.Object,System.EventArgs)">
+ <summary>
+ creates the new db registers required for the production
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:VBMarcoSilva.Form1.strip_CopyToGrid_Click(System.Object,System.EventArgs)">
+ <summary>
+ gets the database info and uploads it to a grid
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:VBMarcoSilva.Form1.strip_CleanGrid_Click(System.Object,System.EventArgs)">
+ <summary>
+ clears the grid info
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:VBMarcoSilva.Form1.RefreshGrid">
+ <summary>
+ Refreshes the grid info
+ </summary>
+</member>
+<member name="M:VBMarcoSilva.Form1.RefreshCombo">
+ <summary>
+ Refreshes the Combo that contains the respective car names
+ </summary>
+</member>
+<member name="M:VBMarcoSilva.Form1.cmb_Viatura_SelectedIndexChanged(System.Object,System.EventArgs)">
+ <summary>
+ Returns the total kms made by the selected vehicle
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:VBMarcoSilva.Form1.cmb_VeiculosViagem_SelectedIndexChanged(System.Object,System.EventArgs)">
+ <summary>
+ returns the total of trips that chosen vehicle has made
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:VBMarcoSilva.Form1.Button1_Click(System.Object,System.EventArgs)">
+ <summary>
+ returns the car with the most mileage
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:VBMarcoSilva.Form1.ActualizaBDRegistoCorrenteToolStripMenuItem_Click(System.Object,System.EventArgs)">
+ <summary>
+ updates the db from the grid, after being changed
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:VBMarcoSilva.Form1.GetGridValue(System.Int32)">
+ <summary>
+ takes the value from the current selected grid to apply to the update bd function
+ </summary>
+ <param name="cell"></param>
+ <returns></returns>
+</member>
+<member name="M:VBMarcoSilva.Form1.btn_apagarViagem_Click(System.Object,System.EventArgs)">
+ <summary>
+ Deletes the selected trip
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:VBMarcoSilva.Form1.cmb_escolheDias_SelectedIndexChanged(System.Object,System.EventArgs)">
+ <summary>
+ combo to refresh the grid with the registers
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:VBMarcoSilva.GetData.AddData">
+ <summary>
+ Lazy Method to add Data to the db - should be refactored to sanitize the data
+ But since it's always the same data that is added, it can be made like this
+ </summary>
+</member>
+<member name="M:VBMarcoSilva.GetData.DeleteAllData">
+ <summary>
+ Lazy Method to erase all data from the DB
+ </summary>
+</member>
+<member name="M:VBMarcoSilva.GetData.DeleteData(System.String)">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="M:VBMarcoSilva.GetData.UpdateData(System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ updating the db from the grid 
+ </summary>
+ <param name="marca"></param>
+ <param name="dias"></param>
+ <param name="quilometros"></param>
+ <param name="id"></param>
+</member>
+</members>
+</doc>

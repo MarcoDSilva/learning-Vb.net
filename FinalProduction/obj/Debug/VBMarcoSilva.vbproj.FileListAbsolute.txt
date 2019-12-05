@@ -1,0 +1,11 @@
+C:\Users\EFA\Desktop\EFA_Programacao\UF23\Producao\VBMarcoSilva\obj\Debug\VBMarcoSilva.vbprojAssemblyReference.cache
+C:\Users\EFA\Desktop\EFA_Programacao\UF23\Producao\VBMarcoSilva\obj\Debug\VBMarcoSilva.Form1.resources
+C:\Users\EFA\Desktop\EFA_Programacao\UF23\Producao\VBMarcoSilva\obj\Debug\VBMarcoSilva.Resources.resources
+C:\Users\EFA\Desktop\EFA_Programacao\UF23\Producao\VBMarcoSilva\obj\Debug\VBMarcoSilva.vbproj.GenerateResource.cache
+C:\Users\EFA\Desktop\EFA_Programacao\UF23\Producao\VBMarcoSilva\bin\Debug\VBMarcoSilva.exe.config
+C:\Users\EFA\Desktop\EFA_Programacao\UF23\Producao\VBMarcoSilva\bin\Debug\VBMarcoSilva.exe
+C:\Users\EFA\Desktop\EFA_Programacao\UF23\Producao\VBMarcoSilva\bin\Debug\VBMarcoSilva.pdb
+C:\Users\EFA\Desktop\EFA_Programacao\UF23\Producao\VBMarcoSilva\bin\Debug\VBMarcoSilva.xml
+C:\Users\EFA\Desktop\EFA_Programacao\UF23\Producao\VBMarcoSilva\obj\Debug\VBMarcoSilva.exe
+C:\Users\EFA\Desktop\EFA_Programacao\UF23\Producao\VBMarcoSilva\obj\Debug\VBMarcoSilva.xml
+C:\Users\EFA\Desktop\EFA_Programacao\UF23\Producao\VBMarcoSilva\obj\Debug\VBMarcoSilva.pdb
